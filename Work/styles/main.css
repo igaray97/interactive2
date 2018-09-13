@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Scope+One');
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+
+font-family: 'Scope One', serif;
+	font-size: 20px;
+	font-weight: normal;
+	background: black ;
+	letter-spacing: 20px;
+
+
+}
+
+/* this is a comment */
+
+#container {
+	width:1500px;
+	margin: 0 auto;
+
+}
+
+#exercises, #projects {
+	margin: 40px 0px;
+}
+
+#square{
+	width: 300px;
+	height: 70px;
+	background: #C70039;
+	padding: 20px;
+	float: left;
+	margin-right: 200px;
+	border-radius: 0px 0px 10px 10px;
+}
+
+h1 {
+	color:white;
+	position: absolute;
+	top: 700px;
+}
+
+h1, h2, h3 {
+	margin: 20px 0;
+    font-size:20pt;
+}
+
+p {
+	margin: 20px 0;
+	font-size:14pt;
+	line-height: 150%;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	color:white;
+}
+
+a:hover {
+	color:white;
+}
