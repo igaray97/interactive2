@@ -258,7 +258,7 @@ border-radius: 10px 10px 40px 40px;background: #24170F; border: 3px solid #59372
 #triangle {
 	width: 0;
 	height: 0;
-	border-left: 75px solid transparent;
+	border-left: 0px solid transparent;
 	border-right: 75px solid transparent;
 	border-bottom: 150px solid yellow;
 	position: absolute;
@@ -266,6 +266,9 @@ border-radius: 10px 10px 40px 40px;background: #24170F; border: 3px solid #59372
 	left: 60px;
 }
 
+.m{
+
+}
 
 
 #clip {
