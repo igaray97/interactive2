@@ -11,13 +11,13 @@ body {
 
 
 #bitz{
-  height: auto;
+  height: ;
   width: auto;
   /* background-color: #E63F42; */
   padding: 84px;
   margin: 200px;
   max-width: 100%;
-  min-height: 200px;
+  min-height: 300px;
 }
 
 
