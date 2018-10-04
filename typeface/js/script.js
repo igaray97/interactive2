@@ -40,16 +40,22 @@ let animationStep = 0
 
 animationWatchDog.addEventListener('animationend',function(){
 
-if(animationStep === 0){
-  heyE.classList.remove('firstAnimation')
-  heyE.classList.add('secondAnimation')
-}
-if(animationStep === 1){
-  heyE.classList.remove('secondAnimation')
-  heyE.classList.remove('thirdAnimation')
-}
-animationStep ++
+  if(animationStep === 0){
+    heyE.classList.remove('firstAnimation')
+    heyE.classList.add('secondAnimation')
+  }
 
+  if(animationStep === 1){
+    heyE.classList.remove('secondAnimation')
+    heyE.classList.add('thirdAnimation')
+  }
+
+  if(animationStep === 2){
+    heyE.classList.remove('thirdAnimation')
+    heyE.classList.add('forthAnimation')
+  }
+  animationStep ++
+  console.log(animationStep)
 })
 
 // e-o in pinkoutline
@@ -116,27 +122,53 @@ animationStepY_po ++
 })
 
 
-// h-a
-
-let animationWatchDog_H = document.querySelector('.appl_animation_H')
-let heyH = document.querySelector('.heyH')
-console.log(heyH)
-let animationStepH = 0
-
-animationWatchDog_H.addEventListener('animationend',function(){
-
-if(animationStepH === 0){
-  heyH.classList.remove('firstAnimation_H')
-  heyH.classList.add('secondAnimation_H')
-}
-if(animationStepH === 1){
-  heyH.classList.remove('secondAnimation_H')
-  heyH.classList.add('thirdAnimation_H')
-}
-if(animationStepH === 2){
-  heyH.classList.remove('thirdAnimation_H')
-  heyH.classList.add('fourthAnimation_H')
-}
-animationStepH ++
-
-})
+// // h-a
+//
+// let animationWatchDog_H = document.querySelector('.appl_animation_H')
+// let heyH = document.querySelector('.heyH')
+// console.log(heyH)
+// let animationStepH = 0
+//
+// animationWatchDog_H.addEventListener('animationend',function(){
+//
+// if(animationStepH === 0){
+//   heyH.classList.remove('firstAnimation_H')
+//   heyH.classList.add('secondAnimation_H')
+// }
+// if(animationStepH === 1){
+//   heyH.classList.remove('secondAnimation_H')
+//   heyH.classList.add('thirdAnimation_H')
+// }
+// if(animationStepH === 2){
+//   heyH.classList.remove('thirdAnimation_H')
+//   heyH.classList.add('fourthAnimation_H')
+// }
+// animationStepH ++
+//
+// })
+//
+//
+// // h-a outline
+//
+// let animationWatchDog_H_po = document.querySelector('.appl_animation_H_po')
+// let heyH_po = document.querySelector('.heyH_po')
+// console.log(heyH_po)
+// let animationStepH_po = 0
+//
+// animationWatchDog_H_po.addEventListener('animationend',function(){
+//
+// if(animationStepH_po === 0){
+//   heyH_po.classList.remove('firstAnimation_H_po')
+//   heyH_po.classList.add('secondAnimation_H_po')
+// }
+// if(animationStepH_po === 1){
+//   heyH_po.classList.remove('secondAnimation_H_po')
+//   heyH_po.classList.add('thirdAnimation_H_po')
+// }
+// if(animationStepH_po === 2){
+//   heyH_po.classList.remove('thirdAnimation_H_po')
+//   heyH_po.classList.add('fourthAnimation_H_po')
+// }
+// animationStepH_po ++
+//
+// })
