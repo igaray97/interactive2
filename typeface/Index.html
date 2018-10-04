@@ -6,13 +6,14 @@
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="style/main.css" type="text/css" />
 
-
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
   <div id="stage">
 
 		<div id="shift">
+<div id="headline">
 <div id="bitz">
     <div id="b">
           <div class="square l_b_1"></div>
@@ -128,7 +129,7 @@
 </div>
 
 <div id="bitz" class="blue_move">
-    <div id="b">
+    <div id="b" class="delay">
           <div class="square l_b_1 blue blue_scale_move"></div>
           <div class="square l_b_2 blue blue_scale_move"></div>
 					<div class="square l_b_3_position blue blue_scale_move"></div>
@@ -156,7 +157,7 @@
           <div class="square l_b_25 blue blue_scale_move"></div>
     </div>
 
-    <div id="i">
+    <div id="i" class="delay">
         <div class="square l_i_1 blue blue_scale_move"></div>
         <div class="square l_i_2 blue blue_scale_move"></div>
         <div class="square l_i_3 blue blue_scale_move"></div>
@@ -183,7 +184,7 @@
 
     </div>
 
-    <div id="t">
+    <div id="t" class="delay">
         <div class="square l_t_1_position blue blue_scale_move"></div>
         <div class="square l_t_2 blue blue_scale_move"></div>
         <div class="square l_t_3 blue blue_scale_move"></div>
@@ -212,7 +213,7 @@
 
     </div>
 
-    <div id="z">
+    <div id="z" class="delay">
         <div class="square l_z_1 blue blue_scale_move"></div>
         <div class="square l_z_2 blue blue_scale_move"></div>
         <div class="square l_z_3 blue blue_scale_move"></div>
@@ -240,120 +241,6 @@
     </div>
 
 </div>
-
-<!-- <div id="bitz" class="blue_outline_move">
-    <div id="b">
-          <div class="square l_b_1 blue_outline"></div>
-          <div class="square l_b_2 blue_outline"></div>
-					<div class="square l_b_3 move blue_outline"></div>
-          <div class="square l_b_4 move blue_outline"></div>
-          <div class="square l_b_5 blue_outline"></div>
-
-          <div class="square l_b_6 blue_outline"></div>
-          <div class="square l_b_7 blue_outline"></div>
-          <div class="square l_b_10 blue_outline"></div>
-
-          <div class="square l_b_11 blue_outline"></div>
-          <div class="square l_b_12 blue_outline"></div>
-          <div class="square l_b_13 move blue_outline"></div>
-          <div class="square l_b_14 move blue_outline"></div>
-          <div class="square l_b_15 blue_outline"></div>
-
-          <div class="square l_b_16 blue_outline"></div>
-          <div class="square l_b_17 blue_outline"></div>
-          <div class="square l_b_20 blue_outline"></div>
-
-          <div class="square l_b_21 blue_outline"></div>
-          <div class="square l_b_22 blue_outline"></div>
-          <div class="square l_b_23 blue_outline"></div>
-          <div class="square l_b_24 blue_outline"></div>
-          <div class="square l_b_25 blue_outline"></div>
-    </div>
-
-    <div id="i">
-        <div class="square l_i_1 blue_outline"></div>
-        <div class="square l_i_2 blue_outline"></div>
-        <div class="square l_i_3 blue_outline"></div>
-        <div class="square l_i_4 blue_outline"></div>
-        <div class="square l_i_5 blue_outline"></div>
-
-        <div class="square l_i_7 blue_outline"></div>
-        <div class="square l_i_8 blue_outline"></div>
-        <div class="square l_i_9 blue_outline"></div>
-
-        <div class="square l_i_12 blue_outline"></div>
-        <div class="square l_i_13 blue_outline"></div>
-        <div class="square l_i_14 blue_outline"></div>
-
-        <div class="square l_i_17 blue_outline"></div>
-        <div class="square l_i_18 blue_outline"></div>
-        <div class="square l_i_19 blue_outline"></div>
-
-        <div class="square l_i_21 move_i blue_outline"></div>
-        <div class="square l_i_22 blue_outline"></div>
-        <div class="square l_i_23 blue_outline"></div>
-        <div class="square l_i_24 blue_outline"></div>
-        <div class="square l_i_25 move_i blue_outline"></div>
-
-    </div>
-
-    <div id="t">
-        <div class="square l_t_1 move_t blue_outline"></div>
-        <div class="square l_t_2 blue_outline"></div>
-        <div class="square l_t_3 blue_outline"></div>
-        <div class="square l_t_4 blue_outline"></div>
-        <div class="square l_t_5 move_t blue_outline"></div>
-
-        <div class="square l_t_6 move_t blue_outline"></div>
-        <div class="square l_t_7 blue_outline"></div>
-        <div class="square l_t_8 blue_outline"></div>
-        <div class="square l_t_9 blue_outline"></div>
-        <div class="square l_t_10 move_t blue_outline"></div>
-
-        <div class="square l_t_11 move_t blue_outline"></div>
-        <div class="square l_t_12 blue_outline"></div>
-        <div class="square l_t_13 blue_outline"></div>
-        <div class="square l_t_14 blue_outline"></div>
-        <div class="square l_t_15 move_t blue_outline"></div>
-
-        <div class="square l_t_17 blue_outline"></div>
-        <div class="square l_t_18 blue_outline"></div>
-        <div class="square l_t_19 blue_outline"></div>
-
-        <div class="square l_t_22 blue_outline"></div>
-        <div class="square l_t_23 blue_outline"></div>
-        <div class="square l_t_24 blue_outline"></div>
-
-    </div>
-
-    <div id="z">
-        <div class="square l_z_1 blue_outline"></div>
-        <div class="square l_z_2 blue_outline"></div>
-        <div class="square l_z_3 blue_outline"></div>
-        <div class="square l_z_4 blue_outline"></div>
-        <div class="square l_z_5 blue_outline"></div>
-
-        <div class="square l_z_8 blue_outline"></div>
-        <div class="square l_z_9 blue_outline"></div>
-        <div class="square l_z_10 blue_outline"></div>
-
-        <div class="square l_z_12 move_z blue_outline"></div>
-        <div class="square l_z_13 blue_outline"></div>
-        <div class="square l_z_14 blue_outline"></div>
-
-        <div class="square l_z_16 move_z blue_outline"></div>
-        <div class="square l_z_17 move_z blue_outline"></div>
-        <div class="square l_z_18 blue_outline"></div>
-
-        <div class="square l_z_21 move_z blue_outline"></div>
-        <div class="square l_z_22 move_z blue_outline"></div>
-        <div class="square l_z_23 blue_outline"></div>
-        <div class="square l_z_24 move_z blue_outline"></div>
-        <div class="square l_z_25 move_z blue_outline"></div>
-
-    </div>
-
-</div> -->
 
 <div id="bitz" class="pink_outline_move">
     <div id="b">
@@ -468,45 +355,45 @@
     </div>
 
 </div>
-
+</div>
 
 <div id="speciment">
 
-  <div id="a">
+	<div id="a">
 
-    <div class="square l_a_1"></div>
-    <div class="square l_a_2"></div>
-    <div class="square l_a_3"></div>
-    <div class="square l_a_4"></div>
-    <div class="square l_a_5"></div>
+		<div class="square l_a_1"></div>
+		<div class="square l_a_2"></div>
+		<div class="square l_a_3"></div>
+		<div class="square l_a_4"></div>
+		<div class="square l_a_5"></div>
 
-    <div class="square l_a_6"></div>
-    <div class="square l_a_7"></div>
-    <div class="square l_a_8"></div>
-    <div class="square l_a_9"></div>
-    <div class="square l_a_10"></div>
+		<div class="square l_a_6"></div>
+		<div class="square l_a_7"></div>
+		<div class="square l_a_8"></div>
+		<div class="square l_a_9"></div>
+		<div class="square l_a_10"></div>
 
-    <div class="square l_a_11"></div>
-    <div class="square l_a_12"></div>
-    <div class="square l_a_13"></div>
-    <div class="square l_a_14"></div>
-    <div class="square l_a_15"></div>
+		<div class="square l_a_11"></div>
+		<div class="square l_a_12"></div>
+		<div class="square l_a_13"></div>
+		<div class="square l_a_14"></div>
+		<div class="square l_a_15"></div>
 
-    <div class="square l_a_16"></div>
-    <div class="square l_a_17"></div>
-    <div class="square l_a_18"></div>
-    <div class="square l_a_19"></div>
-    <div class="square l_a_20"></div>
+		<div class="square l_a_16"></div>
+		<div class="square l_a_17"></div>
+		<div class="square l_a_18"></div>
+		<div class="square l_a_19"></div>
+		<div class="square l_a_20"></div>
 
-    <div class="square l_a_21"></div>
-    <div class="square l_a_22"></div>
-    <div class="square l_a_23"></div>
-    <div class="square l_a_24"></div>
-    <div class="square l_a_25"></div>
+		<div class="square l_a_21"></div>
+		<div class="square l_a_22"></div>
+		<div class="square l_a_23"></div>
+		<div class="square l_a_24"></div>
+		<div class="square l_a_25"></div>
 
-  </div>
+	</div>
 
-  <div id="b">
+  <div id="a_b">
         <div class="square l_b_1"></div>
         <div class="square l_b_2"></div>
         <div class="square l_b_3 move"></div>
@@ -717,7 +604,7 @@
 
         </div>
 
-  <div id="i">
+  <div id="a_i">
     <div class="square l_i_1"></div>
     <div class="square l_i_2"></div>
     <div class="square l_i_3"></div>
@@ -1039,7 +926,7 @@
 
   </div>
 
- 	<div id="t">
+ 	<div id="a_t">
 	   <div class="square l_t_1 move_t"></div>
   	 <div class="square l_t_2"></div>
      <div class="square l_t_3"></div>
@@ -1206,7 +1093,7 @@
 
   </div>
 
-	<div id="z">
+	<div id="a_z">
 		<div class="square l_z_1"></div>
 		<div class="square l_z_2"></div>
 		<div class="square l_z_3"></div>
@@ -1233,6 +1120,771 @@
 
 	</div>
 
+</div>
+
+<div id="headline_speciment">
+<div id="speciment_blue">
+
+	<div id="a" class="white_hide">
+
+		<div class="square l_a_1 white"></div>
+		<div class="square l_a_2 white"></div>
+		<div class="square l_a_3 white"></div>
+		<div class="square l_a_4 white"></div>
+		<div class="square l_a_5 white"></div>
+
+		<div class="square l_a_6 white"></div>
+		<div class="square l_a_7 white"></div>
+		<div class="square l_a_8 white"></div>
+
+
+
+		<div class="square l_a_11 white"></div>
+		<div class="square l_a_12 white"></div>
+		<div class="square l_a_13 white"></div>
+		<div class="square l_a_14 white"></div>
+		<div class="square l_a_15 white"></div>
+
+		<div class="square l_a_16 white"></div>
+		<div class="square l_a_17 white"></div>
+		<div class="square l_a_18 white"></div>
+		<div class="square l_a_19 white"></div>
+		<div class="square l_a_20 white"></div>
+
+		<div class="square l_a_21 white"></div>
+		<div class="square l_a_22 white"></div>
+		<div class="square l_a_25 white"></div>
+
+	</div>
+
+  <div id="a_b" class="white_hide">
+        <div class="square l_b_1  white"></div>
+        <div class="square l_b_2 white"></div>
+        <div class="square l_b_3 move white"></div>
+        <div class="square l_b_4 move white"></div>
+        <div class="square l_b_5 white"></div>
+
+        <div class="square l_b_6 white"></div>
+        <div class="square l_b_7 white"></div>
+        <div class="square l_b_8 white"></div>
+        <div class="square l_b_9 white"></div>
+        <div class="square l_b_10 white"></div>
+
+        <div class="square l_b_11 white"></div>
+        <div class="square l_b_12 white"></div>
+        <div class="square l_b_13 move white"></div>
+        <div class="square l_b_14 move white"></div>
+        <div class="square l_b_15 white"></div>
+
+        <div class="square l_b_16 white"></div>
+        <div class="square l_b_17 white"></div>
+        <div class="square l_b_18 white"></div>
+        <div class="square l_b_19 white"></div>
+        <div class="square l_b_20 white"></div>
+
+        <div class="square l_b_21 white"></div>
+        <div class="square l_b_22 white"></div>
+        <div class="square l_b_23 white"></div>
+        <div class="square l_b_24 white"></div>
+        <div class="square l_b_25 white"></div>
+  </div>
+
+	<div id="c" class="white_hide">
+
+    <div class="square l_c_1 white"></div>
+    <div class="square l_c_2 white"></div>
+    <div class="square l_c_3 white"></div>
+    <div class="square l_c_4 white"></div>
+    <div class="square l_c_5 white"></div>
+
+    <div class="square l_c_6 white"></div>
+    <div class="square l_c_7 white"></div>
+    <div class="square l_c_8 white"></div>
+    <div class="square l_c_9 white"></div>
+    <div class="square l_c_10 white"></div>
+
+    <div class="square l_c_11 white"></div>
+    <div class="square l_c_12 white"></div>
+    <div class="square l_c_13 white"></div>
+    <div class="square l_c_14 white"></div>
+    <div class="square l_c_15 white"></div>
+
+    <div class="square l_c_16 white"></div>
+    <div class="square l_c_17 white"></div>
+    <div class="square l_c_18 white"></div>
+    <div class="square l_c_19 white"></div>
+    <div class="square l_c_20 white"></div>
+
+    <div class="square l_c_21 white"></div>
+    <div class="square l_c_22 white"></div>
+    <div class="square l_c_23 white"></div>
+    <div class="square l_c_24 white"></div>
+    <div class="square l_c_25 white"></div>
+
+  </div>
+
+  <div id="d" class="white_hide">
+
+    <div class="square l_d_1 white"></div>
+    <div class="square l_d_2 white"></div>
+    <div class="square l_d_3 white"></div>
+    <div class="square l_d_4 white"></div>
+    <div class="square l_d_5 white"></div>
+
+    <div class="square l_d_6 white"></div>
+    <div class="square l_d_7 white"></div>
+    <div class="square l_d_10 white"></div>
+
+    <div class="square l_d_11 white"></div>
+    <div class="square l_d_12 white"></div>
+    <div class="square l_d_15 white"></div>
+
+    <div class="square l_d_16 white"></div>
+    <div class="square l_d_17 white"></div>
+    <div class="square l_d_20 white"></div>
+
+    <div class="square l_d_21 white"></div>
+    <div class="square l_d_22 white"></div>
+    <div class="square l_d_23 white"></div>
+    <div class="square l_d_24 white"></div>
+    <div class="square l_d_25 white"></div>
+
+  </div>
+
+  <div id="e" class="white_hide">
+
+    <div class="square l_e_1 white"></div>
+    <div class="square l_e_2 white"></div>
+    <div class="square l_e_3 white"></div>
+    <div class="square l_e_4 white"></div>
+    <div class="square l_e_5 white"></div>
+
+    <div class="square l_e_6 white"></div>
+    <div class="square l_e_7 white"></div>
+    <div class="square l_e_8 white"></div>
+
+    <div class="square l_e_11 white"></div>
+    <div class="square l_e_12 white"></div>
+    <div class="square l_e_13 white"></div>
+    <div class="square l_e_14 white"></div>
+    <div class="square l_e_15 white"></div>
+
+    <div class="square l_e_16 white"></div>
+    <div class="square l_e_17 white"></div>
+    <div class="square l_e_18 white"></div>
+
+    <div class="square l_e_21 white"></div>
+    <div class="square l_e_22 white"></div>
+    <div class="square l_e_23 white"></div>
+    <div class="square l_e_24 white"></div>
+    <div class="square l_e_25 white"></div>
+
+  </div>
+
+  <div id="f" class="white_hide">
+
+      <div class="square l_f_1 white"></div>
+      <div class="square l_f_2 white"></div>
+      <div class="square l_f_3 white"></div>
+      <div class="square l_f_4 white"></div>
+      <div class="square l_f_5 white"></div>
+
+      <div class="square l_f_6 white"></div>
+      <div class="square l_f_7 white"></div>
+      <div class="square l_f_8 white"></div>
+
+      <div class="square l_f_11 white"></div>
+      <div class="square l_f_12 white"></div>
+      <div class="square l_f_13 white"></div>
+      <div class="square l_f_14 white"></div>
+      <div class="square l_f_15 white"></div>
+
+      <div class="square l_f_16 white"></div>
+      <div class="square l_f_17 white"></div>
+      <div class="square l_f_18 white"></div>
+
+      <div class="square l_f_21 white"></div>
+      <div class="square l_f_22 white"></div>
+      <div class="square l_f_23 white"></div>
+
+
+    </div>
+
+  <div id="g" class="white_hide">
+
+        <div class="square l_g_1 white"></div>
+        <div class="square l_g_2 white"></div>
+        <div class="square l_g_3 white"></div>
+        <div class="square l_g_4 white"></div>
+        <div class="square l_g_5 white"></div>
+
+        <div class="square l_g_6 white"></div>
+        <div class="square l_g_7 white"></div>
+
+        <div class="square l_g_11 white"></div>
+        <div class="square l_g_12 white"></div>
+        <div class="square l_g_14 white"></div>
+        <div class="square l_g_15 white"></div>
+
+        <div class="square l_g_16 white"></div>
+        <div class="square l_g_17 white"></div>
+        <div class="square l_g_20 white"></div>
+
+        <div class="square l_g_21 white"></div>
+        <div class="square l_g_22 white"></div>
+        <div class="square l_g_23 white"></div>
+        <div class="square l_g_24 white"></div>
+        <div class="square l_g_25 white"></div>
+
+      </div>
+
+  <div id="h" class="white_hide">
+
+          <div class="square l_h_1 white"></div>
+          <div class="square l_h_2 white"></div>
+          <div class="square l_h_4 white"></div>
+          <div class="square l_h_5 white"></div>
+
+          <div class="square l_h_6 white"></div>
+          <div class="square l_h_7 white"></div>
+          <div class="square l_h_9 white"></div>
+          <div class="square l_h_10 white"></div>
+
+          <div class="square l_h_11 white"></div>
+          <div class="square l_h_12 white"></div>
+          <div class="square l_h_13 white"></div>
+          <div class="square l_h_14 white"></div>
+          <div class="square l_h_15 white"></div>
+
+          <div class="square l_h_16 white"></div>
+          <div class="square l_h_17 white"></div>
+          <div class="square l_h_19 white"></div>
+          <div class="square l_h_20 white"></div>
+
+          <div class="square l_h_21 white"></div>
+          <div class="square l_h_22 white"></div>
+          <div class="square l_h_24 white"></div>
+          <div class="square l_h_25 white"></div>
+
+        </div>
+
+  <div id="a_i" class="white_hide">
+    <div class="square l_i_1 white"></div>
+    <div class="square l_i_2 white"></div>
+    <div class="square l_i_3 white"></div>
+    <div class="square l_i_4 white"></div>
+    <div class="square l_i_5 white"></div>
+
+    <div class="square l_i_7 white"></div>
+    <div class="square l_i_8 white"></div>
+    <div class="square l_i_9 white"></div>
+
+    <div class="square l_i_12 white"></div>
+    <div class="square l_i_13 white"></div>
+    <div class="square l_i_14 white"></div>
+
+    <div class="square l_i_17 white"></div>
+    <div class="square l_i_18 white"></div>
+    <div class="square l_i_19 white"></div>
+
+    <div class="square l_i_21 move_i white"></div>
+    <div class="square l_i_22 white"></div>
+    <div class="square l_i_23 white"></div>
+    <div class="square l_i_24 white"></div>
+    <div class="square l_i_25 move_i white"></div>
+
+  </div>
+
+  <div id="j" class="white_hide">
+
+    <div class="square l_j_2 white"></div>
+    <div class="square l_j_3 white"></div>
+    <div class="square l_j_4 white"></div>
+    <div class="square l_j_5 white"></div>
+
+    <div class="square l_j_8 white"></div>
+    <div class="square l_j_9 white"></div>
+    <div class="square l_j_10 white"></div>
+
+    <div class="square l_j_13 white"></div>
+    <div class="square l_j_14 white"></div>
+    <div class="square l_j_15 white"></div>
+
+    <div class="square l_j_16 white"></div>
+    <div class="square l_j_18 white"></div>
+    <div class="square l_j_19 white"></div>
+    <div class="square l_j_20 white"></div>
+
+    <div class="square l_j_21 white"></div>
+    <div class="square l_j_22 white"></div>
+    <div class="square l_j_23 white"></div>
+    <div class="square l_j_24 white"></div>
+    <div class="square l_j_25 white"></div>
+
+  </div>
+
+  <div id="k" class="white_hide">
+
+    <div class="square l_k_1 white"></div>
+    <div class="square l_k_2 white"></div>
+    <div class="square l_k_5 white"></div>
+
+    <div class="square l_k_6 white"></div>
+    <div class="square l_k_7 white"></div>
+    <div class="square l_k_9 white"></div>
+    <div class="square l_k_10 white"></div>
+
+    <div class="square l_k_11 white"></div>
+    <div class="square l_k_12 white"></div>
+    <div class="square l_k_13 white"></div>
+    <div class="square l_k_14 white"></div>
+
+    <div class="square l_k_16 white"></div>
+    <div class="square l_k_17 white"></div>
+    <div class="square l_k_19 white"></div>
+    <div class="square l_k_20 white"></div>
+
+    <div class="square l_k_21 white"></div>
+    <div class="square l_k_22 white"></div>
+    <div class="square l_k_24 white"></div>
+    <div class="square l_k_25 white"></div>
+
+  </div>
+
+  <div id="l" class="white_hide">
+
+    <div class="square l_l_1 white"></div>
+    <div class="square l_l_2 white"></div>
+    <div class="square l_l_3 white"></div>
+
+    <div class="square l_l_6 white"></div>
+    <div class="square l_l_7 white"></div>
+    <div class="square l_l_8 white"></div>
+
+    <div class="square l_l_11 white"></div>
+    <div class="square l_l_12 white"></div>
+    <div class="square l_l_13 white"></div>
+
+    <div class="square l_l_16 white"></div>
+    <div class="square l_l_17 white"></div>
+    <div class="square l_l_18 white"></div>
+    <div class="square l_l_19 white"></div>
+    <div class="square l_l_20 white"></div>
+
+    <div class="square l_l_21 white"></div>
+    <div class="square l_l_22 white"></div>
+    <div class="square l_l_23 white"></div>
+    <div class="square l_l_24 white"></div>
+    <div class="square l_l_25 white"></div>
+
+  </div>
+
+  <div id="m" class="white_hide">
+
+    <div class="square l_m_1 white"></div>
+    <div class="square l_m_2 white"></div>
+    <div class="square l_m_4 white"></div>
+    <div class="square l_m_5 white"></div>
+
+    <div class="square l_m_6 white"></div>
+    <div class="square l_m_7 white"></div>
+    <div class="square l_m_8 white"></div>
+    <div class="square l_m_9 white"></div>
+    <div class="square l_m_10 white"></div>
+
+    <div class="square l_m_11 white"></div>
+    <div class="square l_m_12 white"></div>
+    <div class="square l_m_13 white"></div>
+    <div class="square l_m_14 white"></div>
+    <div class="square l_m_15 white"></div>
+
+    <div class="square l_m_16 white"></div>
+    <div class="square l_m_17 white"></div>
+    <div class="square l_m_18 white"></div>
+    <div class="square l_m_19 white"></div>
+    <div class="square l_m_20 white"></div>
+
+    <div class="square l_m_21 white"></div>
+    <div class="square l_m_23 white"></div>
+    <div class="square l_m_25 white"></div>
+
+  </div>
+
+  <div id="n" class="white_hide">
+
+    <div class="square l_n_1 white"></div>
+    <div class="square l_n_2 white"></div>
+    <div class="square l_n_5 white"></div>
+
+    <div class="square l_n_6 white"></div>
+    <div class="square l_n_7 white"></div>
+    <div class="square l_n_8 white"></div>
+    <div class="square l_n_10 white"></div>
+
+    <div class="square l_n_11 white"></div>
+    <div class="square l_n_12 white"></div>
+    <div class="square l_n_13 white"></div>
+    <div class="square l_n_14 white"></div>
+    <div class="square l_n_15 white"></div>
+
+    <div class="square l_n_16 white"></div>
+    <div class="square l_n_18 white"></div>
+    <div class="square l_n_19 white"></div>
+    <div class="square l_n_20 white"></div>
+
+    <div class="square l_n_21 white"></div>
+    <div class="square l_n_24 white"></div>
+    <div class="square l_n_25 white"></div>
+
+  </div>
+
+  <div id="o" class="white_hide">
+
+    <div class="square l_o_1 white"></div>
+    <div class="square l_o_2 white"></div>
+    <div class="square l_o_3 white"></div>
+    <div class="square l_o_4 white"></div>
+    <div class="square l_o_5 white"></div>
+
+    <div class="square l_o_6 white"></div>
+    <div class="square l_o_7 white"></div>
+    <div class="square l_o_10 white"></div>
+
+    <div class="square l_o_11 white"></div>
+    <div class="square l_o_12 white"></div>
+    <div class="square l_o_15 white"></div>
+
+    <div class="square l_o_16 white"></div>
+    <div class="square l_o_17 white"></div>
+    <div class="square l_o_18 white"></div>
+    <div class="square l_o_19 white"></div>
+    <div class="square l_o_20 white"></div>
+
+    <div class="square l_o_21 white"></div>
+    <div class="square l_o_22 white"></div>
+    <div class="square l_o_23 white"></div>
+    <div class="square l_o_24 white"></div>
+    <div class="square l_o_25 white"></div>
+
+  </div>
+
+  <div id="p" class="white_hide">
+
+    <div class="square l_p_1 white"></div>
+    <div class="square l_p_2 white"></div>
+    <div class="square l_p_3 white"></div>
+    <div class="square l_p_4 white"></div>
+    <div class="square l_p_5 white"></div>
+
+    <div class="square l_p_6 white"></div>
+    <div class="square l_p_7 white"></div>
+    <div class="square l_p_10 white"></div>
+
+    <div class="square l_p_11 white"></div>
+    <div class="square l_p_12 white"></div>
+    <div class="square l_p_13 white"></div>
+    <div class="square l_p_14 white"></div>
+    <div class="square l_p_15 white"></div>
+
+    <div class="square l_p_16 white"></div>
+    <div class="square l_p_17 white"></div>
+    <div class="square l_p_18 white"></div>
+
+    <div class="square l_p_21 white"></div>
+    <div class="square l_p_22 white"></div>
+    <div class="square l_p_23 white"></div>
+
+  </div>
+
+  <div id="q" class="white_hide">
+
+    <div class="square l_q_1 white"></div>
+    <div class="square l_q_2 white"></div>
+    <div class="square l_q_3 white"></div>
+    <div class="square l_q_4 white"></div>
+    <div class="square l_q_5 white"></div>
+
+    <div class="square l_q_6 white"></div>
+    <div class="square l_q_7 white"></div>
+    <div class="square l_q_10 white"></div>
+
+    <div class="square l_q_11 white"></div>
+    <div class="square l_q_12 white"></div>
+    <div class="square l_q_15 white"></div>
+
+    <div class="square l_q_16 white"></div>
+    <div class="square l_q_17 white"></div>
+    <div class="square l_q_18 white"></div>
+    <div class="square l_q_19 white"></div>
+    <div class="square l_q_20 white"></div>
+
+    <div class="square l_q_21 white"></div>
+    <div class="square l_q_22 white"></div>
+    <div class="square l_q_23 white"></div>
+    <div class="square l_q_24 white"></div>
+    <div class="square l_q_25 white"></div>
+
+  </div>
+
+  <div id="r" class="white_hide">
+
+    <div class="square l_r_1 white"></div>
+    <div class="square l_r_2 white"></div>
+    <div class="square l_r_3 white"></div>
+    <div class="square l_r_4 white"></div>
+    <div class="square l_r_5 white"></div>
+
+    <div class="square l_r_6 white"></div>
+    <div class="square l_r_7 white"></div>
+    <div class="square l_r_8 white"></div>
+    <div class="square l_r_9 white"></div>
+    <div class="square l_r_10 white"></div>
+
+    <div class="square l_r_11 white"></div>
+    <div class="square l_r_12 white"></div>
+    <div class="square l_r_13 white"></div>
+    <div class="square l_r_14 white"></div>
+    <div class="square l_r_15 white"></div>
+
+    <div class="square l_r_16 white"></div>
+    <div class="square l_r_17 white"></div>
+    <div class="square l_r_18 white"></div>
+    <div class="square l_r_19 white"></div>
+    <div class="square l_r_20 white"></div>
+
+    <div class="square l_r_21 white"></div>
+    <div class="square l_r_22 white"></div>
+    <div class="square l_r_23 white"></div>
+    <div class="square l_r_24 white"></div>
+    <div class="square l_r_25 white"></div>
+
+  </div>
+
+  <div id="s" class="white_hide">
+
+    <div class="square l_s_1 white"></div>
+    <div class="square l_s_2 white"></div>
+    <div class="square l_s_3 white"></div>
+    <div class="square l_s_4 white"></div>
+    <div class="square l_s_5 white"></div>
+
+    <div class="square l_s_6 white"></div>
+    <div class="square l_s_7 white"></div>
+    <div class="square l_s_8 white"></div>
+    <div class="square l_s_10 white"></div>
+
+    <div class="square l_s_12 white"></div>
+    <div class="square l_s_13 white"></div>
+    <div class="square l_s_14 white"></div>
+
+    <div class="square l_s_16 white"></div>
+    <div class="square l_s_18 white"></div>
+    <div class="square l_s_19 white"></div>
+    <div class="square l_s_20 white"></div>
+
+    <div class="square l_s_21 white"></div>
+    <div class="square l_s_22 white"></div>
+    <div class="square l_s_23 white"></div>
+    <div class="square l_s_24 white"></div>
+    <div class="square l_s_25 white"></div>
+
+  </div>
+
+ 	<div id="a_t" class="white_hide">
+	   <div class="square l_t_1 move_t white"></div>
+  	 <div class="square l_t_2 white"></div>
+     <div class="square l_t_3 white"></div>
+	   <div class="square l_t_4 white"></div>
+     <div class="square l_t_5 move_t white"></div>
+
+     <div class="square l_t_6 move_t white"></div>
+     <div class="square l_t_7 white"></div>
+     <div class="square l_t_8 white"></div>
+     <div class="square l_t_9 white"></div>
+	   <div class="square l_t_10 move_t white"></div>
+
+	   <div class="square l_t_11 move_t white"></div>
+	   <div class="square l_t_12 white"></div>
+	   <div class="square l_t_13 white"></div>
+	   <div class="square l_t_14 white"></div>
+	   <div class="square l_t_15 move_t white"></div>
+
+     <div class="square l_t_17 white"></div>
+     <div class="square l_t_18 white"></div>
+     <div class="square l_t_19 white"></div>
+
+	   <div class="square l_t_22 white"></div>
+	   <div class="square l_t_23 white"></div>
+     <div class="square l_t_24 white"></div>
+
+	 </div>
+
+  <div id="u" class="white_hide">
+
+    <div class="square l_u_1 white"></div>
+    <div class="square l_u_2 white"></div>
+    <div class="square l_u_5 white"></div>
+
+    <div class="square l_u_6 white"></div>
+    <div class="square l_u_7 white"></div>
+    <div class="square l_u_10 white"></div>
+
+    <div class="square l_u_11 white"></div>
+    <div class="square l_u_12 white"></div>
+    <div class="square l_u_13 white"></div>
+    <div class="square l_u_14 white"></div>
+    <div class="square l_u_15 white"></div>
+
+    <div class="square l_u_16 white"></div>
+    <div class="square l_u_17 white"></div>
+    <div class="square l_u_18 white"></div>
+    <div class="square l_u_19 white"></div>
+    <div class="square l_u_20 white"></div>
+
+    <div class="square l_u_21 white"></div>
+    <div class="square l_u_22 white"></div>
+    <div class="square l_u_23 white"></div>
+    <div class="square l_u_24 white"></div>
+    <div class="square l_u_25 white"></div>
+
+  </div>
+
+  <div id="v" class="white_hide">
+
+    <div class="square l_v_1 white"></div>
+    <div class="square l_v_2 white"></div>
+    <div class="square l_v_5 white"></div>
+
+    <div class="square l_v_6 white"></div>
+    <div class="square l_v_7 white"></div>
+    <div class="square l_v_10 white"></div>
+
+    <div class="square l_v_11 white"></div>
+    <div class="square l_v_12 white"></div>
+    <div class="square l_v_13 white"></div>
+    <div class="square l_v_14 white"></div>
+    <div class="square l_v_15 white"></div>
+
+    <div class="square l_v_17 white"></div>
+    <div class="square l_v_18 white"></div>
+    <div class="square l_v_19 white"></div>
+
+    <div class="square l_v_23 white"></div>
+
+  </div>
+
+  <div id="w" class="white_hide">
+
+    <div class="square l_w_1 white"></div>
+    <div class="square l_w_3 white"></div>
+    <div class="square l_w_5 white"></div>
+
+    <div class="square l_w_6 white"></div>
+    <div class="square l_w_8 white"></div>
+    <div class="square l_w_10 white"></div>
+
+    <div class="square l_w_11 white"></div>
+    <div class="square l_w_12 white"></div>
+    <div class="square l_w_13 white"></div>
+    <div class="square l_w_14 white"></div>
+    <div class="square l_w_15 white"></div>
+
+    <div class="square l_w_16 white"></div>
+    <div class="square l_w_17 white"></div>
+    <div class="square l_w_18 white"></div>
+    <div class="square l_w_19 white"></div>
+    <div class="square l_w_20 white"></div>
+
+    <div class="square l_w_21 white"></div>
+    <div class="square l_w_22 white"></div>
+    <div class="square l_w_24 white"></div>
+    <div class="square l_w_25 white"></div>
+
+  </div>
+
+  <div id="x" class="white_hide">
+
+    <div class="square l_x_1 white"></div>
+    <div class="square l_x_2 white"></div>
+    <div class="square l_x_4 white"></div>
+    <div class="square l_x_5 white"></div>
+
+    <div class="square l_x_6 white"></div>
+    <div class="square l_x_7 white"></div>
+    <div class="square l_x_8 white"></div>
+    <div class="square l_x_9 white"></div>
+    <div class="square l_x_10 white"></div>
+
+    <div class="square l_x_12 white"></div>
+    <div class="square l_x_13 white"></div>
+    <div class="square l_x_14 white"></div>
+
+    <div class="square l_x_16 white"></div>
+    <div class="square l_x_17 white"></div>
+    <div class="square l_x_18 white"></div>
+    <div class="square l_x_19 white"></div>
+    <div class="square l_x_20 white"></div>
+
+    <div class="square l_x_21 white"></div>
+    <div class="square l_x_22 white"></div>
+    <div class="square l_x_24 white"></div>
+    <div class="square l_x_25 white"></div>
+
+  </div>
+
+  <div id="y" class="white_hide">
+
+    <div class="square l_y_1 white"></div>
+    <div class="square l_y_4 white"></div>
+    <div class="square l_y_5 white"></div>
+
+    <div class="square l_y_6 white"></div>
+    <div class="square l_y_7 white"></div>
+    <div class="square l_y_9 white"></div>
+    <div class="square l_y_10 white"></div>
+
+    <div class="square l_y_11 white"></div>
+    <div class="square l_y_12 white"></div>
+    <div class="square l_y_13 white"></div>
+    <div class="square l_y_14 white"></div>
+    <div class="square l_y_15 white"></div>
+
+    <div class="square l_y_18 white"></div>
+    <div class="square l_y_19 white"></div>
+
+    <div class="square l_y_22 white"></div>
+    <div class="square l_y_23 white"></div>
+
+  </div>
+
+	<div id="a_z" class="white_hide">
+		<div class="square l_z_1 white"></div>
+		<div class="square l_z_2 white"></div>
+		<div class="square l_z_3 white"></div>
+		<div class="square l_z_4 white"></div>
+		<div class="square l_z_5 white"></div>
+
+		<div class="square l_z_8 white"></div>
+		<div class="square l_z_9 white"></div>
+		<div class="square l_z_10 white"></div>
+
+		<div class="square l_z_12 move_z white"></div>
+		<div class="square l_z_13 white"></div>
+		<div class="square l_z_14 white"></div>
+
+		<div class="square l_z_16 move_z white"></div>
+		<div class="square l_z_17 move_z white"></div>
+		<div class="square l_z_18 white"></div>
+
+		<div class="square l_z_21 move_z white"></div>
+		<div class="square l_z_22 move_z white"></div>
+		<div class="square l_z_23 white"></div>
+		<div class="square l_z_24 move_z white"></div>
+		<div class="square l_z_25 move_z white"></div>
+
+	</div>
+
+</div>
 </div>
 
 <div id="numbers">
@@ -1616,6 +2268,228 @@
   </div>
 
 </div>
+
+<div id="application">
+
+<div id="hey">
+
+	<div id="h" class="heyH firstAnimation_H" style="margin-right: 20px; margin-bottom: 20px;">
+
+	     <div class="square l_h_1"></div>
+	     <div class="square l_h_2"></div>
+	     <div class="square l_h_4"></div>
+	     <div class="square l_h_5"></div>
+
+	     <div class="square l_h_6"></div>
+	     <div class="square l_h_7"></div>
+	     <div class="square l_h-a_9 appl_animation_H"></div>
+	     <div class="square l_h_10"></div>
+
+	     <div class="square l_h_11"></div>
+	     <div class="square l_h_12"></div>
+	     <div class="square l_h-a_13 appl_animation_H"></div>
+	     <div class="square l_h_14"></div>
+	     <div class="square l_h_15"></div>
+
+	     <div class="square l_h_16"></div>
+	     <div class="square l_h_17"></div>
+	     <div class="square l_h_19"></div>
+	     <div class="square l_h_20"></div>
+
+	     <div class="square l_h_21"></div>
+	     <div class="square l_h_22"></div>
+	     <div class="square l_h-a_24 appl_animation_H"></div>
+	     <div class="square l_h_25"></div>
+
+	</div>
+
+	<div id="e" class="heyE firstAnimation" style="margin-right: 20px; margin-bottom: 20px;">
+
+		<div class="square l_e_1"></div>
+		<div class="square l_e_2"></div>
+		<div class="square l_e_3"></div>
+		<div class="square l_e_4"></div>
+		<div class="square l_e_5"></div>
+
+		<div class="square l_e_6"></div>
+		<div class="square l_e_7"></div>
+		<div class="square l_e-o_8 appl_animation"></div>
+
+		<div class="square l_e_11"></div>
+		<div class="square l_e_12"></div>
+		<div class="square l_e-o_13 appl_animation"></div>
+		<div class="square l_e-o_14 appl_animation"></div>
+		<div class="square l_e_15"></div>
+
+		<div class="square l_e_16"></div>
+		<div class="square l_e_17"></div>
+		<div class="square l_e-o_18 appl_animation"></div>
+
+		<div class="square l_e_21"></div>
+		<div class="square l_e_22"></div>
+		<div class="square l_e_23"></div>
+		<div class="square l_e_24"></div>
+		<div class="square l_e_25"></div>
+
+	</div>
+
+	<div id="y"  class="heyY firstAnimation_Y" style="margin-right: 20px; margin-bottom: 20px;">
+
+		<div class="square l_y_1_S Scale"></div>
+		<div class="square l_y-w_1 appl_animation"></div>
+		<div class="square l_y-w_4 appl_animation"></div>
+		<div class="square l_y_5"></div>
+
+		<div class="square l_y_6_S Scale"></div>
+		<div class="square l_y-w_6 appl_animation_Y"></div>
+		<div class="square l_y-w_7 appl_animation_Y"></div>
+		<div class="square l_y-w_9 appl_animation_Y"></div>
+		<div class="square l_y_10 appl_animation_Y"></div>
+
+		<div class="square l_y-w_11 appl_animation_Y"></div>
+		<div class="square l_y-w_12 appl_animation_Y"></div>
+		<div class="square l_y_13 appl_animation_Y"></div>
+		<div class="square l_y_14 appl_animation_Y"></div>
+		<div class="square l_y_15 appl_animation_Y"></div>
+
+		<div class="square l_y_18 appl_animation_Y"></div>
+		<div class="square l_y_19 appl_animation_Y"></div>
+			<div class="square l_y_20_S appl_animation_Y"></div>
+
+		<div class="square l_y_22 appl_animation_Y"></div>
+		<div class="square l_y-w_23 appl_animation_Y"></div>
+		<div class="square l_y_25_S appl_animation_Y"></div>
+
+</div>
+
+<div id="exclamation" style="margin-right: 20px; margin-bottom: 20px;">
+
+	<div class="square l_exclamation_1"></div>
+	<div class="square l_exclamation_2"></div>
+
+	<div class="square l_exclamation_6"></div>
+	<div class="square l_exclamation_7"></div>
+
+	<div class="square l_exclamation_11"></div>
+	<div class="square l_exclamation_12"></div>
+
+	<div class="square l_exclamation_21"></div>
+	<div class="square l_exclamation_22"></div>
+
+</div>
+
+</div>
+
+<div id="hey_pinkoutline">
+
+	<div id="h" style="margin-right: 20px; margin-bottom: 20px;">
+
+	     <div class="square l_h_1 pinkoutline"></div>
+	     <div class="square l_h_2 pinkoutline"></div>
+	     <div class="square l_h_4 pinkoutline"></div>
+	     <div class="square l_h_5 pinkoutline"></div>
+
+	     <div class="square l_h_6 pinkoutline"></div>
+	     <div class="square l_h_7 pinkoutline"></div>
+	     <div class="square l_h_9 pinkoutline"></div>
+	     <div class="square l_h_10 pinkoutline"></div>
+
+	     <div class="square l_h_11 pinkoutline"></div>
+	     <div class="square l_h_12 pinkoutline"></div>
+	     <div class="square l_h_13 pinkoutline"></div>
+	     <div class="square l_h_14 pinkoutline"></div>
+	     <div class="square l_h_15 pinkoutline"></div>
+
+	     <div class="square l_h_16 pinkoutline"></div>
+	     <div class="square l_h_17 pinkoutline"></div>
+	     <div class="square l_h_19 pinkoutline"></div>
+	     <div class="square l_h_20 pinkoutline"></div>
+
+	     <div class="square l_h_21 pinkoutline"></div>
+	     <div class="square l_h_22 pinkoutline"></div>
+	     <div class="square l_h_24 pinkoutline"></div>
+	     <div class="square l_h_25 pinkoutline"></div>
+
+	</div>
+
+	<div id="e" class="heyE_po firstAnimation_E_po" style="margin-right: 20px; margin-bottom: 20px;">
+
+		<div class="square l_e_1 pinkoutline"></div>
+		<div class="square l_e_2 pinkoutline"></div>
+		<div class="square l_e_3 pinkoutline"></div>
+		<div class="square l_e_4 pinkoutline"></div>
+		<div class="square l_e_5 pinkoutline"></div>
+
+		<div class="square l_e_6 pinkoutline"></div>
+		<div class="square l_e_7 pinkoutline"></div>
+		<div class="square l_e-o_8 appl_animation_po pinkoutline"></div>
+
+		<div class="square l_e_11 pinkoutline"></div>
+		<div class="square l_e_12 pinkoutline"></div>
+		<div class="square l_e-o_13 appl_animation_po pinkoutline"></div>
+		<div class="square l_e-o_14 appl_animation_po pinkoutline"></div>
+		<div class="square l_e_15 pinkoutline"></div>
+
+		<div class="square l_e_16 pinkoutline"></div>
+		<div class="square l_e_17 pinkoutline"></div>
+		<div class="square l_e-o_18 appl_animation_po pinkoutline"></div>
+
+		<div class="square l_e_21 pinkoutline"></div>
+		<div class="square l_e_22 pinkoutline"></div>
+		<div class="square l_e_23 pinkoutline"></div>
+		<div class="square l_e_24 pinkoutline"></div>
+		<div class="square l_e_25 pinkoutline"></div>
+
+	</div>
+
+	<div id="y" class="heyY_po firstAnimation_Y_po"style="margin-right: 20px; margin-bottom: 20px;">
+
+		<div class="square l_y_1_S Scale pinkoutline"></div>
+		<div class="square l_y-w_1 appl_animation_Y_po pinkoutline"></div>
+		<div class="square l_y-w_4 appl_animation_Y_po pinkoutline"></div>
+		<div class="square l_y_5 pinkoutline"></div>
+
+		<div class="square l_y_6_S Scale pinkoutline"></div>
+		<div class="square l_y-w_6 appl_animation_Y_po pinkoutline"></div>
+		<div class="square l_y-w_7 appl_animation_Y_po pinkoutline"></div>
+		<div class="square l_y-w_9 appl_animation_Y_po pinkoutline"></div>
+		<div class="square l_y_10 appl_animation_Y_po pinkoutline"></div>
+
+		<div class="square l_y-w_11 appl_animation_Y_po pinkoutline"></div>
+		<div class="square l_y-w_12 appl_animation_Y_po pinkoutline"></div>
+		<div class="square l_y_13 appl_animation_Y_po pinkoutline"></div>
+		<div class="square l_y_14 appl_animation_Y_po pinkoutline"></div>
+		<div class="square l_y_15 appl_animation_Y_po pinkoutline"></div>
+
+		<div class="square l_y_18 appl_animation_Y_po pinkoutline"></div>
+		<div class="square l_y_19 appl_animation_Y_po pinkoutline"></div>
+			<div class="square l_y_20_S appl_animation_Y_po pinkoutline"></div>
+
+		<div class="square l_y_22 appl_animation_Y_po pinkoutline"></div>
+		<div class="square l_y-w_23 appl_animation_Y_po pinkoutline"></div>
+		<div class="square l_y_25_S appl_animation_Y_po pinkoutline"></div>
+
+
+</div>
+
+<div id="exclamation">
+
+	<div class="square l_exclamation_1 pinkoutline"></div>
+	<div class="square l_exclamation_2 pinkoutline"></div>
+
+	<div class="square l_exclamation_6 pinkoutline"></div>
+	<div class="square l_exclamation_7 pinkoutline"></div>
+
+	<div class="square l_exclamation_11 pinkoutline"></div>
+	<div class="square l_exclamation_12 pinkoutline"></div>
+
+	<div class="square l_exclamation_21 pinkoutline"></div>
+	<div class="square l_exclamation_22 pinkoutline"></div>
+
+</div>
+
+</div>
+
 
 		</div>
 
