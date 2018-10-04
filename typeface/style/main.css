@@ -2496,7 +2496,7 @@ body {
 
 
 #are{
-	top: 120px;
+	top: 70px;
 	position: absolute;
 	height: auto;
 	width: auto;
@@ -2506,4 +2506,17 @@ body {
 	max-width: 100%;
 	min-height: 300px;
 	left: -130px;
+}
+
+#you{
+	top: 1400px;
+	position: absolute;
+	height: auto;
+	width: auto;
+	/* background-color: #E63F42; */
+	padding: 40px;
+	margin: 130px;
+	max-width: 100%;
+	min-height: 300px;
+	left: 90px;
 }
