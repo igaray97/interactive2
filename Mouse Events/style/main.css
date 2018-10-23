@@ -44,6 +44,7 @@ body {
 	left: 40px;
 	position: relative;
 	z-index: 1;
+	transition-timing-function: ease-in;
 }
 
 .eye {
@@ -95,10 +96,101 @@ body {
 .three{	top: 80px; left: 170px;	}
 .four{	transform: scale(.5); top: 60px; left: 140px;	}
 
-/* main star*/
+svg{
+	transform: scale(.1);
+	position: fixed;
+
+}
+
+.star1{ opacity: 0;transition:2s;}
+
+.Sstar{ opacity: 0;transition:3s;}
+
+.circle { opacity: 0;transition:3s;}
+
+#smallstarr{	opacity: 0;}
+
+.cloud{ opacity: 0;transition-timing-function: linear; transition:1s;}
+
+.meteor{
+	position: absolute;
+	top: 990px;left: -500px;
+	opacity: 1;
+	animation-duration: 1.5s;
+	animation-timing-function:ease-in;
+	animation-fill-mode: forwards;
+
+}
+.move.meteor{ animation-name: meteor;
+transition:1s;}
+
+  @keyframes meteor {
+    from {	top: 990px;left: -500px;}
+    to {	top: 190px;left: 250px;}
+  }
+
+
+.rocket{
+	position: absolute;
+	top: calc(50vh - 1450px);
+	left: calc(50vw - 250px);
+	opacity: 0;
+}
+
+.show5.rocket{opacity: 1; transition:1s;}
+
+
+.alien{
+	position: fixed;
+	top: calc(50vh - 700px);
+	left: calc(50vw - 1350px);
+	opacity: 0;
+}
+
+.show6.alien{opacity: 1; transition:1s;}
+
+.show.star1 {
+  opacity: 1;
+	transition: 2s;
+}
+
+.show2.Sstar{
+	  opacity: 1;
+}
+
+.show2.circle{
+	  opacity: 1;
+}
+
+.show4.cloud{opacity: 1;}
+
+
+
+
+.st0{fill:#6D80BF;stroke:#6D80BF;stroke-width:4.87;stroke-linecap:round;stroke-linejoin:round;}
+.st1{fill:#FBFBF4;}
+.st2{fill:#F15D22;}
+.st3{fill:#FED402;}
+.st4{fill:#0F1638;stroke:#6D80BF;stroke-width:4.87;stroke-miterlimit:10;}
+
+
+.st00{fill:#91CFA6;}
+.st11{fill:#262532;}
+.st22{fill:#FFFFFF;}
+.st33{fill:none;stroke:#91CFA6;stroke-width:2.89;stroke-miterlimit:10;}
+.st44{opacity:0.17;fill:#FFFFFF;enable-background:new    ;}
+.st55{fill:#E1383D;stroke:#E1383D;stroke-width:1.44;stroke-linecap:round;stroke-miterlimit:10;}
+.st66{fill:none;stroke:#E1383D;stroke-width:1.44;stroke-linecap:round;stroke-miterlimit:10;}
+.st77{fill:#E1383D;}
+.st88{fill:#CC202A;}
+
 
 .star {
-	position: relative;
+	position: fixed;
+	top: calc(50vh - 300px);
+	left: calc(50vw + 150px);
+	transform: scale(1.2);
+
 }
 
 /* items */
@@ -111,44 +203,94 @@ body {
 /*   -webkit-border-radius: 100px / 10px;
   -moz-border-radius: 100px / 10px; */
   border-radius: 100px / 5px;
+
 }
 
 .circle{
-  position:relative;
+  position:absolute;
   width:10px;
   height: 10px;
-  background: yellow;
   border-radius: 50%;
 }
+/* add this */
+
+
 
 .smallstar{
-  position: relative;
+	position: fixed;
+	top: calc(50vh - 500px);
+	left: calc(50vw - 750px);
+
 }
 
 .cross{
   position: relative;
   width: 25px;
   height: 5px;
-  background: gray;
+	background-color: white;
   border-radius: 10px / 2.5px;
 }
 
+.smallstar2{
+	position: fixed;
+	top: calc(50vh - 100px);
+	left: calc(50vw - 550px);
+}
+.smallstar3{
+	position: fixed;
+	top: calc(50vh + 100px);
+	left: calc(50vw - 780px);
+}
+.smallstar4{
+	position: fixed;
+	top: calc(50vh + 30px);
+	left: calc(50vw - 280px);
+}
+.smallstar5{
+	position: fixed;
+	top: calc(50vh + 130px);
+	left: calc(50vw + 480px);
+}
+.smallstar6{
+	position: fixed;
+	top: calc(50vh - 530px);
+	left: calc(50vw + 380px);
+}
+.smallstar7{
+	position: fixed;
+	top: calc(50vh - 180px);
+	left: calc(50vw + 250px);
+}
+.smallstar8{
+	position: fixed;
+	top: calc(50vh - 420px);
+	left: calc(50vw - 130px);
+}
+.smallstar9{
+	position: fixed;
+	top: calc(50vh + 90px);
+	left: calc(50vw + 120px);
+}
+
+
 .cloud-1{
-  position: relative;
-  top: 300px;
-  left: 100px;
+	position: fixed;
+	top: calc(50vh + 45px);
+	left: calc(50vw - 120px);
 }
 .cloud-2{
-  position: absolute;
-  top: 315px;
-  left:135px;
-  transform: scale(0.8);
+	position: fixed;
+	top: calc(50vh + 85px);
+	left: calc(50vw - 70px);
+  transform: scale(1.1);
 }
 .cloud-3{
-position: absolute;
-  top: 280px;
-  left: 210px;
+	position: fixed;
+	top: calc(50vh + 25px);
+	left: calc(50vw + 40px);
+	z-index: -3;
 }
+/* until here */
 .white-cloud{
   position: relative;
   background: white;
@@ -158,13 +300,14 @@ position: absolute;
   position: relative;
   background: lightgray;
 }
+/* add this */
 
-.meteor{
-  position: absolute;
-  top: 200px;
-  left:100px;
-
-}
+/* .meteor.hide{
+	position: fixed;
+	top: calc(50vh - 10px);
+	left: calc(50vw - 920px);
+} */
+/* until here */
 
 /* .orange{
   background-color: orange;
@@ -200,24 +343,228 @@ position: absolute;
   left:100px;
 }
 
-#circle-1{
-  position: relative;
-  top: 100px;
-  left: 300px;
+.circle-1{
+	width: 10px;
+	height: 10px;
+	background-color: yellow;
+	border-radius: 50%;
 }
-#circle-2{
-  position: relative;
+.circle-2{
+	width: 10px;
+	height: 10px;
   transform: scale(0.7);
-  top: 150px;
-  left: 350px;
+	background-color: yellow;
+	border-radius: 50%;
 }
-#circle-3{
-  position: relative;
+.circle-3{
+	width: 10px;
+	height: 10px;
   transform: scale(0.5);
-  top: 180px;
-  left: 225px;
+	background-color: yellow;
+	border-radius: 50%;
 }
-
+#c-1{
+	position: absolute;
+	top: 100px;
+	left: 300px;
+	background-color: yellow;
+	top: calc(50vh - 330px);
+	left: calc(50vw - 550px);
+}
+#c-2{
+	position: fixed;
+	top: calc(50vh - 30px);
+	left: calc(50vw - 660px);
+	background-color: yellow;
+}
+#c-3{
+	position: fixed;
+	top: calc(50vh + 60px);
+	left: calc(50vw - 560px);
+	background-color: yellow;
+}
+#c-4{
+	position: absolute;
+	top: 100px;
+	left: 300px;
+	background-color: yellow;
+	top: calc(50vh + 230px);
+	left: calc(50vw - 480px);
+}
+#c-5{
+	position: fixed;
+	top: calc(50vh - 130px);
+	left: calc(50vw - 500px);
+	background-color: yellow;
+}
+#c-6{
+	position: fixed;
+	top: calc(50vh - 280px);
+	left: calc(50vw - 400px);
+	background-color: yellow;
+}
+#c-7{
+	position: fixed;
+	top: calc(50vh - 380px);
+	left: calc(50vw - 200px);
+	background-color: yellow;
+}
+#c-8{
+	position: fixed;
+	top: calc(50vh + 160px);
+	left: calc(50vw - 700px);
+	background-color: yellow;
+}
+#c-9{
+	position: fixed;
+	top: calc(50vh - 50px);
+	left: calc(50vw - 400px);
+	background-color: yellow;
+}
+#c-10{
+	position: fixed;
+	top: calc(50vh + 320px);
+	left: calc(50vw - 300px);
+	background-color: yellow;
+}
+#c-11{
+	position: fixed;
+	top: calc(50vh - 80px);
+	left: calc(50vw - 180px);
+	background-color: yellow;
+}
+#c-12{
+	position: fixed;
+	top: calc(50vh + 120px);
+	left: calc(50vw - 300px);
+	background-color: yellow;
+}
+#c-13{
+	position: fixed;
+	top: calc(50vh + 270px);
+	left: calc(50vw - 80px);
+	background-color: yellow;
+}
+#c-14{
+	position: fixed;
+	top: calc(50vh + 220px);
+	left: calc(50vw + 120px);
+	background-color: yellow;
+}
+#c-15{
+	position: fixed;
+	top: calc(50vh + 370px);
+	left: calc(50vw + 320px);
+	background-color: yellow;
+}
+#c-16{
+	position: fixed;
+	top: calc(50vh + 350px);
+	left: calc(50vw - 620px);
+	background-color: yellow;
+}
+#c-17{
+	position: fixed;
+	top: calc(50vh + 350px);
+	left: calc(50vw + 670px);
+	background-color: yellow;
+}
+#c-18{
+	position: fixed;
+	top: calc(50vh + 150px);
+	left: calc(50vw + 640px);
+	background-color: yellow;
+}
+#c-19{
+	position: fixed;
+	top: calc(50vh + 170px);
+	left: calc(50vw + 400px);
+	background-color: yellow;
+}
+#c-20{
+	position: fixed;
+	top: calc(50vh + 20px);
+	left: calc(50vw + 220px);
+	background-color: yellow;
+}
+#c-21{
+	position: fixed;
+	top: calc(50vh - 220px);
+	left: calc(50vw + 120px);
+	background-color: yellow;
+}
+#c-22{
+	position: fixed;
+	top: calc(50vh - 80px);
+	left: calc(50vw + 400px);
+	background-color: yellow;
+}
+#c-23{
+	position: fixed;
+	top: calc(50vh - 320px);
+	left: calc(50vw + 10px);
+	background-color: yellow;
+}
+#c-24{
+	position: fixed;
+	top: calc(50vh + 350px);
+	left: calc(50vw + 60px);
+	background-color: yellow;
+}
+#c-25{
+	position: fixed;
+	top: calc(50vh + 300px);
+	left: calc(50vw + 500px);
+	background-color: yellow;
+}
+#c-26{
+	position: fixed;
+	top: calc(50vh - 230px);
+	left: calc(50vw - 220px);
+	background-color: yellow;
+}
+#c-27{
+	position: fixed;
+	top: calc(50vh - 270px);
+	left: calc(50vw + 420px);
+	background-color: yellow;
+}
+#c-28{
+	position: fixed;
+	top: calc(50vh - 360px);
+	left: calc(50vw + 220px);
+	background-color: yellow;
+}
+#c-29{
+	position: fixed;
+	top: calc(50vh + 60px);
+	left: calc(50vw + 520px);
+	background-color: yellow;
+}
+#c-30{
+	position: fixed;
+	top: calc(50vh - 370px);
+	left: calc(50vw + 620px);
+	background-color: yellow;
+}
+#c-31{
+	position: fixed;
+	top: calc(50vh - 220px);
+	left: calc(50vw + 550px);
+	background-color: yellow;
+}
+#c-32{
+	position: fixed;
+	top: calc(50vh - 70px);
+	left: calc(50vw + 620px);
+	background-color: yellow;
+}
+#c-33{
+	position: fixed;
+	top: calc(50vh - 210px);
+	left: calc(50vw - 620px);
+	background-color: yellow;
+}
 #cross-oval-1 {
   position: absolute;
   top: 200px;
