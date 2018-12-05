@@ -1,10 +1,12 @@
 @import url("https://use.typekit.net/sdo2akm.css");
 
-/*
+html{
+  margin-top: -16px;
+  margin-left: -8px;
+}
 body{
-  width: 100vw;
-  height: 100vh;
-    } */
+top: -100px;
+    }
 h1{
   font-family: futura-pt, sans-serif;
   color: #FFC300 ;
@@ -233,11 +235,21 @@ a:active {
 #photo{
   background-color: grey;
   position: absolute;
-  position: absolute;
-     top: 40%;
-     left: 50%;
      width: 500px;
      margin-top: -250px; /* Half the height */
      margin-left: -250px; /* Half the width */
   float: left;
+  transition: all 100ms ease-out;
+}
+
+.firstImage #photo {
+  top: 40%;
+  left: 50%;
+}
+
+.secondImage #photo {
+  top: 40%;
+  left: 20%;
+  width: 400px;
+
 }
