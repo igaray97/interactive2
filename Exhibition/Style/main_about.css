@@ -104,10 +104,14 @@ a:active {
   padding-left: 40px;
   letter-spacing: 4px;
   opacity: 0;
+  transform: scale(11);
+  opacity: 1;
+  top: 150px;
+  left: 550px;
 
 }
 
-#Tittle {
+/* #Tittle {
   animation-duration: 2s;
   animation-delay: 1s;
   animation-name: bounceIn;
@@ -131,10 +135,10 @@ a:active {
   100% {
     transform: scale(11);
     opacity: 1;
-    top: 250px;
+    top: 150px;
     left: 550px;
   }
-}
+} */
 
 #background{
   position: absolute;
@@ -261,13 +265,32 @@ a:active {
 }
 
 #bodytype{
-  top: 500px;
-  left: 175px;
+  top: 400px;
+  left: 675px;
   width: 600px;
   position: absolute;
   font-family: futura-pt, sans-serif;
   color: #FFC300 ;
   font-size: 20px;
   font-weight: 400;
+
+}
+#birth{
+  left: -200px;
+  position: relative;
+}
+
+h3{
+  font-size: 30px;
+}
+
+h4{
+  position: relative;
+  top: -15px;
+}
+
+p{
+  position: relative;
+  top: -15px;
 
 }
