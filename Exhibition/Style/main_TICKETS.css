@@ -259,8 +259,8 @@ a:active {
 #tickets{
   background-color: transparent;
   position: absolute;
-  margin-top: 600px;
-  left: 700px;
+  margin-top: 650px;
+  left: 750px;
   z-index: 3
 }
 
@@ -276,4 +276,24 @@ h2{
   letter-spacing: 4px;
   text-align: right;
   z-index: 5;
+}
+
+#bodytype{
+  top: 500px;
+  left: 175px;
+  width: 600px;
+  position: absolute;
+  font-family: futura-pt, sans-serif;
+  color: #FFC300 ;
+  font-size: 30px;
+  font-weight: 400;
+
+}
+#birth{
+  left: -200px;
+  position: relative;
+}
+
+h3{
+  font-size: 40px;
 }
