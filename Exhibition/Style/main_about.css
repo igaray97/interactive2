@@ -47,10 +47,14 @@ h1{
   transform-origin: top right;
   transform-style: preserve-3D;
   transform: rotate(180deg);
+  transition: .5s;
+  transition-timing-function: ease-in-out;
 }
 
 .box-rotate {
   transform: rotate(360deg);
+  transition: .5s;
+  transition-timing-function: ease-in-out;
 }
 
 button {
@@ -63,7 +67,8 @@ button {
   transform: scale(.6);
   float: right;
   margin-right: -50px;
-  margin-top: -50px
+  margin-top: -50px;
+  outline: none;
 }
 
 #menu{

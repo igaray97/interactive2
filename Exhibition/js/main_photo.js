@@ -7,7 +7,6 @@ $('button').click(function () {
 
 
 let firstPhoto = document.querySelector('#photo')
-let 
 
 firstPhoto.addEventListener('click',function(){
   document.body.classList.add('secondImage')
