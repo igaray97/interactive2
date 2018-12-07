@@ -115,7 +115,7 @@ a:active {
 
 #Tittle {
   animation-duration: 2s;
-  animation-delay: 1s;
+
   animation-name: bounceIn;
   animation-fill-mode: forwards;
 
@@ -244,6 +244,8 @@ a:active {
 #position{
   position: absolute ;
   margin-top: -200px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .img1{
